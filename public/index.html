@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <!-- All of the imports needed for the project -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+
+	<script src="YggdrasillWars.html"></script>
+
+</head>
+
+<body background="assets/screens/background.jpg">
+
+
+  <div class="modal">
+
+    <form id="loginScreen" class="modal-content animate">
+      <div class="imgcontainer">
+
+        <img src="assets/screens/yggdrasilAvatar.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="userid" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pswrd" required>
+
+        <button type="button" onclick="checkLogin(this.form)">Login</button>
+        <button type="button" onclick="checkSignUp(this.form)">Sign Up</button>
+
+      </div>
+
+      <div class="container" style="background-color:#727272">
+        <button type="reset" class="cancelbtn">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+
+  <script language="javascript">
+
+    // socket = io.connect('http://proj-309-la-1.cs.iastate.edu:3000');
+    var socket = io.connect('http://localhost:3000');
+
+    function checkLogin(form){
+
+      var data = {
+        UserName: form.userid.value,
+        Pass: form.pswrd.value
+      };
+
+      socket.emit('checkDB', data);
+
+      socket.on('checkedDB', function(data){
+        if(!data){
+          alert("Wrong Username or Password")/*displays error message*/
+          location.reload();
+        }
+        else {
+          window.open('YggdrasillWars.html','_self')/*opens the target page while Id & password matches*/
+        }
+      });
+    }
+
+    function checkSignUp(form){
+
+      var datain = {
+        UserName: form.userid.value,
+        Pass: form.pswrd.value
+      };
+      socket.emit('checkUserDB', datain);
+
+      socket.on('checkedUserDB', function(data){
+        if(data){
+          alert("Username in use")/*displays error message*/
+          location.reload();
+        }
+        else {
+          socket.emit('insertDB', datain);
+          window.open('YggdrasillWars.html','_self')/*opens the target page while Id & password matches*/
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Enemy</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Enemy</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Enemy</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="Enemy"><span class="type-signature"></span>new Enemy<span class="signature">(health, x, y, speed, damage, detectionRadius)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    This is the constructor for the most general type of enemy.
+All future enemies will have the properties and methods that are declared here.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>health</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The amount of damage the monster can take before dying</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The initial x-position of the enemy</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The initial y-position of the enemy</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>speed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">How fast the enemy is going to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>damage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">How much damage the enemy does per attack</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>detectionRadius</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The "view distance" of the enemy. When a fighter is within this radius, the enemy will chase them</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="enemy.js.html">enemy.js</a>, <a href="enemy.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="assignAnimations"><span class="type-signature"></span>assignAnimations<span class="signature">(idleAnimation, walkAnimation, attackAnimation)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Assigns animations to the enemy's sprite.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>idleAnimation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Animation</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Animation that plays when the enemy is standing still.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>walkAnimation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Animation</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Animation that plays when the enemy is walking</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>attackAnimation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Animation</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Animation that plays when the enemy is attacking</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="enemy.js.html">enemy.js</a>, <a href="enemy.js.html#line53">line 53</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="attack"><span class="type-signature"></span>attack<span class="signature">(enemy, player)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Called when a player collides with the enemy.
+Enemy's attack Animation is played and the player that is colliding takes an amount of damage defined in the constructor.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>enemy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Sprite</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The enemy that is one half of the collision.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>player</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Sprite</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The player that is the other half of the collision</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="enemy.js.html">enemy.js</a>, <a href="enemy.js.html#line126">line 126</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(playerGroup)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Makes the enemy chase the closest player to it at any given time.
+There is a certain range that if the player is outside, the monster just walks around randomly.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>playerGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Group</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A Group object that contains all of fighter's sprites in the server</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="enemy.js.html">enemy.js</a>, <a href="enemy.js.html#line68">line 68</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Chest.html">Chest</a></li><li><a href="Enemy.html">Enemy</a></li><li><a href="EnemySpawner.html">EnemySpawner</a></li><li><a href="Fighter.html">Fighter</a></li><li><a href="Obstacle.html">Obstacle</a></li></ul><h3>Global</h3><ul><li><a href="global.html#acceleration">acceleration</a></li><li><a href="global.html#friction">friction</a></li><li><a href="global.html#maxSpeed">maxSpeed</a></li><li><a href="global.html#turnSpeed">turnSpeed</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Mar 09 2017 20:42:31 GMT-0600 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
