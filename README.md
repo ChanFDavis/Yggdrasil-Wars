@@ -7,22 +7,22 @@ Every character has a unique ability that allows them to gain an advantage in ba
 Sword too dull? Find a chest and pick the lock by typing the keys shown - there may be a useful item inside! However, some tricksters have left locked chests laying around with nothing in them... what a ruse!
 
 ## Controls:
-**`W`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move up
-**`A`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move left
-**`S`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move down
-**`D`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move right
-**`P`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Open the party screen
-**`M`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Open the map
-**`SPACE` or `Left Mouse Button`**&nbsp;&nbsp; : &nbsp;&nbsp;Attack
+**`W`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move up <br>
+**`A`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move left <br>
+**`S`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move down <br>
+**`D`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Move right <br>
+**`P`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Open the party screen <br>
+**`M`** &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;Open the map <br>
+**`SPACE` or `Left Mouse Button`**&nbsp;&nbsp; : &nbsp;&nbsp;Attack <br>
 
 ## Spectator Specific Controls:
-&nbsp;&nbsp;&nbsp; **`<`**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Zoom In
-&nbsp;&nbsp;&nbsp; **`>`**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Zoom Out 
-**`SHIFT`**&nbsp;&nbsp; : &nbsp;&nbsp;Pan faster
+&nbsp;&nbsp;&nbsp; **`<`**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Zoom In <br>
+&nbsp;&nbsp;&nbsp; **`>`**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Zoom Out  <br>
+**`SHIFT`**&nbsp;&nbsp; : &nbsp;&nbsp;Pan faster <br>
 
 ## Mod Specific Controls:
-**`O`**&nbsp;&nbsp; : &nbsp;&nbsp;Place obstacle at mouse
-**`C`**&nbsp;&nbsp; : &nbsp;&nbsp;Place chest at mouse
+**`O`**&nbsp;&nbsp; : &nbsp;&nbsp;Place obstacle at mouse <br>
+**`C`**&nbsp;&nbsp; : &nbsp;&nbsp;Place chest at mouse <br>
 
 
 <br>
